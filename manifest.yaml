@@ -1,0 +1,10 @@
+---
+ applications:
+ - name: murano
+   memory: 128M
+   instances: 1
+   buildpack: https://github.com/cloudfoundry/staticfile-buildpack
+   env:
+     CF_STAGING_TIMEOUT: 15
+     CF_STARTUP_TIMEOUT: 15
+
